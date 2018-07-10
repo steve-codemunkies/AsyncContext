@@ -1,11 +1,13 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 namespace AsyncContext.App
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
+            await Task.Delay(500);
             Console.WriteLine("Hello World!");
         }
     }
